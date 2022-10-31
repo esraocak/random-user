@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.maincontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;  
+}
+.container{
+    background: rgb(238,174,198);
+    background: linear-gradient(184deg, rgba(238,174,198,1) 0%, rgba(212,148,233,1) 64%);
+    box-shadow:blueviolet  0px 20px 30px -10px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 2fr repeat(4,1fr);
+    width: 450px;
+    height: 600px;
+    gap: 1rem;
+    padding: 2rem;
+    margin: 2rem;
+    border: 1px solid black;
+    border-radius: 2%;
+    
+}
+.photo{
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+
+}
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: left;
+    
+}
+.p,.m,.c,.l{
+    justify-self: center;
+}
+
+
+.mail, .phonep, .locphoto{
+    width:30px;
+    height:30px;
+}
+
+
+.age, .date{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    justify-self: center;
+}
+.titles{
+    font-size: 1.3rem;
+}
+.btn{
+    background-color: blueviolet;
+    width: 150px;
+    height: 60px;
+    border-radius: 4%;
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    transition: all 1sn;
+}
+.btn:hover{
+    background-color:rgb(238,174,198);
+    color:black;
+    cursor: pointer;
+    
+}
